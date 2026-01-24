@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from "@vercel/analytics/next"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Background from './components/Background';
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <Router>
+      <Analytics/>
       <ScrollToTop/>
       <Background />
       <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark' : ''}`}>
