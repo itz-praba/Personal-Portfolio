@@ -12,8 +12,6 @@ const Skills = () => {
         { name: 'JavaScript', level: 95 },
         { name: 'HTML/CSS', level: 98 },
         { name: 'Tailwind CSS', level: 92 },
-        { name: 'Redux', level: 85 },
-        { name: 'Vue.js', level: 80 },
       ],
     },
     {
@@ -24,7 +22,6 @@ const Skills = () => {
         { name: 'Express.js', level: 88 },
         { name: 'Python', level: 80 },
         { name: 'REST APIs', level: 92 },
-        { name: 'GraphQL', level: 75 },
         { name: 'JWT Auth', level: 85 },
       ],
     },
@@ -34,7 +31,6 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', level: 88 },
         { name: 'PostgreSQL', level: 82 },
-        { name: 'Redis', level: 75 },
         { name: 'AWS', level: 80 },
         { name: 'Docker', level: 78 },
         { name: 'Firebase', level: 85 },
@@ -46,8 +42,6 @@ const Skills = () => {
       skills: [
         { name: 'React Native', level: 80 },
         { name: 'Git/GitHub', level: 95 },
-        { name: 'Webpack', level: 75 },
-        { name: 'Jest', level: 82 },
         { name: 'Figma', level: 85 },
         { name: 'VS Code', level: 98 },
       ],

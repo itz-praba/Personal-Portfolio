@@ -23,6 +23,9 @@ export default {
       backdropBlur: {
         'xs': '2px',
       },
+       fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],

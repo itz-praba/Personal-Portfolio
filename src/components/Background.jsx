@@ -1,6 +1,6 @@
 
 import React from 'react';
-import img from '../assest/bgimage.jpg';  
+// import img from '../assest/bgimage.jpg';  
 
 const Background = () => {
   return (
@@ -9,7 +9,7 @@ const Background = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-70"
         style={{ 
-          backgroundImage: `url(${img})`,
+          // backgroundImage: `url(${img})`,
           backgroundColor: '#111827' 
         }}
       />

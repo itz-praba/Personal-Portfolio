@@ -1,41 +1,42 @@
 import React from 'react';
 import { ExternalLink, Github, Smartphone, Globe, Database, Zap } from 'lucide-react';
+import img from '../assest/vec.png'
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce application built with MERN stack, featuring user authentication, payment integration, and admin dashboard.',
+      title: 'QA-Examination Platform',
+      description: 'A full-stack QA-Examination Platform application built with MERN stack, featuring user authentication, student exam portal and admin dashboard.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
+      tags: ['React', 'Node.js', 'MongoDB', 'AWS'],
       category: 'Full-Stack',
       icon: Globe,
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://aptitudevec.in/',
+      githubUrl: 'https://github.com/4274-hari/QA-Examination-Platform',
     },
     {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Express', 'Socket.io', 'PostgreSQL'],
-      category: 'Web App',
-      icon: Zap,
-      liveUrl: '#',
-      githubUrl: '#',
-    },
+  id: 2,
+  title: 'College Website',
+  description: 'A modern and responsive college website showcasing academic programs, admissions information, events, and campus life, with an intuitive interface for students, faculty, and visitors.',
+  image: `${img}`,
+  tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Responsive Design'],
+  category: 'Web App',
+  icon: Zap,
+  liveUrl: 'https://velammal.edu.in/',
+  githubUrl: 'https://github.com/Web-Developer-VEC/VEC_Web_Engine',
+},
     {
-      id: 3,
-      title: 'Social Media Dashboard',
-      description: 'An analytics dashboard for social media management with data visualization, scheduling, and performance tracking.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Chart.js', 'REST API', 'JWT'],
-      category: 'Dashboard',
-      icon: Database,
-      liveUrl: '#',
-      githubUrl: '#',
-    },
+  id: 3,
+  title: 'Symposium Website',
+  description: 'A dynamic and responsive symposium website featuring event schedules, speaker profiles, paper submissions, and registration details, designed to provide a seamless experience for participants and organizers.',
+  image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
+  tags: ['React', 'Responsive Design', 'Event Management', 'Postgres SQL', 'UI/UX'],
+  category: 'Web App',
+  icon: Zap,
+  liveUrl: 'https://cognebula.com/',
+  githubUrl: 'https://github.com/COGNEBULA/Sympo_OG',
+},
     {
       id: 4,
       title: 'Food Delivery App',
@@ -178,9 +179,12 @@ const Projects = () => {
           </div>
 
           <div className="text-center mt-12">
+              <a href = "https://github.com/itz-praba" target="_blank"
+                rel="noopener noreferrer">
             <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
               View All Projects on GitHub
             </button>
+              </a>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ const Hero = () => {
                 >
                   View My Work
                 </button>
-              <a href="/resume.pdf" download>
+              <a href="https://drive.google.com/uc?export=download&id=1N8BXTeLU4AJTElCr_Cqqz5IBK3zlwSDc" download>
                 <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
                   Download Resume
                 </button>
@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="flex space-x-4 justify-center gap-9">
               {/* GitHub */}
               <a
-                href="https://github.com/dinesh26072006"
+                href="https://github.com/itz-praba"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"

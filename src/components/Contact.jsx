@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Send, MapPin, Phone, Mail, Github, Linkedin, Twitter } from 'lucide-react';
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+
 // import { Send } from "react-feather";
 
 const Contact = () => {
@@ -35,13 +37,26 @@ const Contact = () => {
         "8YATou47f4fPl9FRe" // from EmailJS
       )
       .then(() => {
-        alert("Message sent successfully!");
+        Swal.fire({
+  icon: "success",
+  title: "Message Sent!",
+  text: "Your email has been sent successfully 🚀",
+  confirmButtonText: "OK",
+  confirmButtonColor: "#10b981", // green
+});
+
         setFormData({ name: "", email: "", subject: "", message: "" });
       })
       .catch((err) => {
-        console.error("Error sending message:", err);
-        alert("Failed to send message. Please try again.");
-      });
+  console.error("Error sending message:", err);
+  Swal.fire({
+    icon: "error",
+    title: "Oops!",
+    text: "Failed to send message. Please try again.",
+    confirmButtonColor: "#ef4444",
+  });
+});
+
     // Reset form
     setFormData({ name: '', email: '', subject: '', message: '', phone: ''});
   };
@@ -117,7 +132,7 @@ const Contact = () => {
               <div className="flex space-x-4 justify-left gap-9">
                 {/* GitHub */}
                 <a
-                  href="https://github.com/dinesh26072006"
+                  href="https://github.com/itz-praba"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
@@ -224,7 +239,7 @@ const Contact = () => {
                     Phone no
                   </label>
                   <input
-                    type="number"
+                    type="tel"
                     inputMode="numeric"
                     pattern="[0-9]*"
                     id="phone"
