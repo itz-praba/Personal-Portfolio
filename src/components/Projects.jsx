@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github, Smartphone, Globe, Database, Zap } from 'lucide-react';
 import img from '../assest/vec.png'
+import cognebula from '../assest/Screenshot 2026-01-28 102307.png'
 
 const Projects = () => {
   const projects = [
@@ -30,7 +31,7 @@ const Projects = () => {
   id: 3,
   title: 'Symposium Website',
   description: 'A dynamic and responsive symposium website featuring event schedules, speaker profiles, paper submissions, and registration details, designed to provide a seamless experience for participants and organizers.',
-  image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
+  image: `${cognebula}`,
   tags: ['React', 'Responsive Design', 'Event Management', 'Postgres SQL', 'UI/UX'],
   category: 'Web App',
   icon: Zap,
